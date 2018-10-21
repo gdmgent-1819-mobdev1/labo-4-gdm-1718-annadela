@@ -1,0 +1,172 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    height: 100vh;
+}
+.bigContainer{
+    background-color: rgb(180, 182, 209);
+    width: 30%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    border: solid 5px black;
+    overflow: auto;
+}
+
+.dropzone{
+    /* border: 1px solid black; */
+    position: fixed;
+}
+
+/* .likezone{
+    top: 0;
+    left:0;
+    width: 35%;
+    height: 100vh;
+}
+
+.likezone:hover{
+    transition: 0.5s;
+    background-color: rgb(240, 255, 240);
+}
+
+.dislikezone{
+    top: 0;
+    right:0;
+    width: 35%;
+    height: 100vh;
+} */
+
+.dislikezone:hover{
+    transition: 1s;
+    background-color: rgb(255, 240, 240);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.title{
+    background-color: white;;
+    width: 100%; 
+    text-align: center;
+    box-shadow: 1px 1px 20px #EBE1E1;
+    position: relative;
+    font-family: 'K2D', sans-serif;
+}
+
+.list{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    top: 10px;
+    right: 0;
+}
+
+.picture{
+    width: 60%;
+    height: auto;
+    border-radius: 50%;
+    border-left: 3px dashed white;
+    border-top: 2px dashed white;
+    padding: 7px 3px 3px 5px;
+    position: relative;
+    background-color: rgb(180, 182, 209);
+    box-shadow: 0px 0px 10px 10px rgb(180, 182, 209);
+}
+
+.buttondiv{
+    width: 50%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bigBtn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 100%;
+    font-size: 200%;
+    background-color: transparent;
+}
+
+.likebutton{
+    color: rgb(10, 88, 10);
+    box-shadow: 0px 0px 10px rgb(10, 88, 10);
+}
+
+.likebutton:hover{
+    transition: 0.3s;
+    color: white;
+    background-color: rgb(10, 88, 10);
+    box-shadow: none;
+}
+
+.dislikebutton{
+    color: rgb(88, 10, 10);
+    box-shadow: 0px 0px 10px rgb(88, 10, 10);
+}
+
+.dislikebutton:hover{
+    transition: 0.3s;
+    color: white;
+    background-color: rgb(88, 10, 10);
+    box-shadow: none;
+}
+
+.gegevens{
+    font-size: 15px;
+    /* background-color: gray; */
+    width: 60%;
+    line-height: 1px;
+    font-family: 'Bitter', serif;
+    border: 2px dashed white;
+    padding: 50px 30px 10px 30px;
+    /* margin-top: -20%; */
+    background-color: rgb(203, 205, 231);
+    text-transform: capitalize;
+}
+
+.littlePicture{
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    border-left: 3px dashed rgb(180, 182, 209);
+    border-top: 2px dashed rgb(180, 182, 209);
+    padding: 7px 3px 3px 5px;
+    position: relative;
+    left: -10%;
+    background-color: rgb(203, 205, 231);
+    box-shadow: 5px 0px 10px rgb(180, 182, 209);
+    margin-top: 10%;
+}
+
+.personList{
+    font-size: 10px;
+    border: 2px dashed rgb(180, 182, 209);
+    list-style-type: none;
+    display:flex;
+    flex-flow: wrap;
+    margin-top: 10px;
+    background-color: rgb(203, 205, 231);
+}
+
+.personOpinion{
+    font-family: 'K2D', sans-serif;
+}
+
+.littleBox{
+    font-size: 10px;
+    display:flex;
+    flex-direction: column;
+    line-height: 1px;
+}
+
+.likeList{
+    margin-top: 20px;
+}
