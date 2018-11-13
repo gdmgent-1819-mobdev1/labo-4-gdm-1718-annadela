@@ -14,35 +14,7 @@ body{
     align-items: center;
     border: solid 5px black;
     overflow: auto;
-}
-
-.dropzone{
-    /* border: 1px solid black; */
-    position: fixed;
-}
-
-/* .likezone{
-    top: 0;
-    left:0;
-    width: 35%;
-    height: 100vh;
-}
-
-.likezone:hover{
-    transition: 0.5s;
-    background-color: rgb(240, 255, 240);
-}
-
-.dislikezone{
-    top: 0;
-    right:0;
-    width: 35%;
-    height: 100vh;
-} */
-
-.dislikezone:hover{
-    transition: 1s;
-    background-color: rgb(255, 240, 240);
+    position: relative;
 }
 
 ::-webkit-scrollbar {
@@ -56,6 +28,8 @@ body{
     box-shadow: 1px 1px 20px #EBE1E1;
     position: relative;
     font-family: 'K2D', sans-serif;
+    position: relative;
+    z-index: 1;
 }
 
 .list{
@@ -76,6 +50,12 @@ body{
     position: relative;
     background-color: rgb(180, 182, 209);
     box-shadow: 0px 0px 10px 10px rgb(180, 182, 209);
+    z-index: 2;
+}
+.picture:hover{
+    transition: 1s;
+    padding: 20px;
+    border-color: rgb(67, 90, 67);
 }
 
 .buttondiv{
@@ -130,6 +110,8 @@ body{
     /* margin-top: -20%; */
     background-color: rgb(203, 205, 231);
     text-transform: capitalize;
+    position: relative;
+    z-index: 1;
 }
 
 .littlePicture{
@@ -170,3 +152,11 @@ body{
 .likeList{
     margin-top: 20px;
 }
+
+.map{
+    background-color: yellow;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    }
